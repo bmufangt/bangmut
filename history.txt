@@ -1,0 +1,1000 @@
+  955  which smba
+  956  ls
+  957  cp -r '/var/run/vmblock-fuse/blockdir/5236616e-7ccf-6658-bd35-0ad5c6537c78/截图和代码' .
+  958  ls
+  959  cd 截图和代码
+  960  ls
+  961  vi tftp-download.py 
+  962  htop
+  963  top
+  964  vi /etc/network/interfaces
+  965  cd ..
+  966  ld
+  967  cd ..
+  968  ls
+  969  cd ..
+  970  ls
+  971  vi 3-并发服务器-http协议
+  972  ls
+  973  mkdir -m 755 3-并发服务器-http协议
+  974  ls
+  975  rm 3-并发服务器-http协议 
+  976  mkdir -m 755 3-并发服务器-http协议
+  977  ls
+  978  cd 3-并发服务器-http协议/
+  979  ls
+  980  vi 1-单进程服务器.py
+  981  python3 1-单进程服务器.py 
+  982  cat 1-单进程服务器.py 
+  983  ls
+  984  ifconfig
+  985  ping 192.168.1.104
+  986  ls
+  987  vi 1-单进程服务器.py 
+  988  python3 1-单进程服务器.py 
+  989  ls
+  990  vi 1-单进程服务器.py 
+  991  python3 1-单进程服务器.py 
+  992  vi 1-单进程服务器.py 
+  993  python3 1-单进程服务器.py 
+  994  vi 1-单进程服务器.py
+  995  python 1-单进程服务器.py 
+  996  vi 1-单进程服务器.py
+  997  python 1-单进程服务器.py 
+  998  vi 1-单进程服务器.py
+  999  python 1-单进程服务器.py 
+ 1000  vi 1-单进程服务器.py
+ 1001  python 1-单进程服务器.py 
+ 1002  vi 1-单进程服务器.py 
+ 1003  py3 1-单进程服务器.py 
+ 1004  vi 1-单进程服务器.py 
+ 1005  2to3 -w 1-单进程服务器.py 
+ 1006  ls
+ 1007  vi 1-单进程服务器.py
+ 1008  py3 1-单进程服务器.py 
+ 1009  vi 1-单进程服务器.py
+ 1010  py3 1-单进程服务器.py 
+ 1011  vi 1-单进程服务器.py
+ 1012  py3 1-单进程服务器.py 
+ 1013  ls
+ 1014  diff 1-单进程服务器.py 1-单进程服务器.py.bak 
+ 1015  vi 1-单进程服务器.py
+ 1016  py3 1-单进程服务器.py
+ 1017  vi 1-单进程服务器.py
+ 1018  py3 1-单进程服务器.py
+ 1019  ls
+ 1020  vi 1-单进程服务器.py
+ 1021  py3 1-单进程服务器.py
+ 1022  ls
+ 1023  cp 1-单进程服务器.py 2-多进程服务器.py
+ 1024  vi 2-多进程服务器.py 
+ 1025  vim 2-多进程服务器.py 
+ 1026  p3 2-多进程服务器.py 
+ 1027  py3 2-多进程服务器.py 
+ 1028  vi vi 
+ 1029  vi 2-多进程服务器.py 
+ 1030  py3 2-多进程服务器.py 
+ 1031  py3 2-tcp_client.py 
+ 1032  cd 
+ 1033  ls
+ 1034  cd python/
+ 1035  ls
+ 1036  cd pythonHx/
+ 1037  ls
+ 1038  cd Net/
+ 1039  ls
+ 1040  cd 2-tcp/
+ 1041  ls
+ 1042  vi 2-tcp_client.py 
+ 1043  py3 2-tcp_client.py 
+ 1044  jkl
+ 1045  vi jkl
+ 1046  vi 2-tcp_client.py 
+ 1047  py3 2-tcp_client.py 
+ 1048  s -ef
+ 1049  ps -ef 
+ 1050  sudo kill -9 6039
+ 1051  top
+ 1052  ps -ef | grep py3
+ 1053  ps -ef | grep 1-
+ 1054  ls
+ 1055  cd python/pythonHx/Net/
+ 1056  ls
+ 1057  cd 3-并发服务器-http协议/
+ 1058  ls
+ 1059  cp 2-多进程服务器.py 3-多线程服务器.py
+ 1060  vi 3-多线程服务器.py 
+ 1061  py3 3-多线程服务器.py 
+ 1062  vi 3-多线程服务器.py
+ 1063  py3 3-多线程服务器.py 
+ 1064  ls
+ 1065  vi 1-static-web-server.py 
+ 1066  ls
+ 1067  ls
+ 1068  cd pycharm-community-2017.1.3/
+ 1069  ls
+ 1070  vi build.txt 
+ 1071  vi Install-Linux-tar.txt 
+ 1072  ls
+ 1073  cd bin
+ 1074  ls
+ 1075  sudo ./pycharm.sh 
+ 1076  ls
+ 1077  pwd
+ 1078  cd /usr/
+ 1079  ls
+ 1080  mkdir pyCharm
+ 1081  sudo mkdir -m 755 pyCharm
+ 1082  ls
+ 1083  cd pyCharm/
+ 1084  ls
+ 1085  cp '/var/run/vmblock-fuse/blockdir/525705a2-e9fc-54ad-cf56-33f668fe0810/pycharm-community-2017.1.3.tar.gz' .
+ 1086  sudo cp '/var/run/vmblock-fuse/blockdir/525705a2-e9fc-54ad-cf56-33f668fe0810/pycharm-community-2017.1.3.tar.gz' .
+ 1087  ls
+ 1088  cd ..
+ 1089  ls
+ 1090  cd
+ 1091  ls
+ 1092  mkdir -m 755 pyCharm
+ 1093  ls
+ 1094  mv /usr/pyCharm/* pyCharm/
+ 1095  sudo mv /usr/pyCharm/* pyCharm/
+ 1096  ls
+ 1097  cd pyCharm/
+ 1098  ls
+ 1099  tar xfz pycharm-community-2017.1.3.tar.gz 
+ 1100  ls
+ 1101  exit
+ 1102  cd python/
+ 1103  ls
+ 1104  cd pythonJc/
+ 1105  ls
+ 1106  cd dictionary/
+ 1107  ls
+ 1108  vi dicIntroduce.py 
+ 1109  vi dic.py
+ 1110  py3 dic.py 
+ 1111  vi dic.py 
+ 1112  cd
+ 1113  ls
+ 1114  cd python/
+ 1115  ls
+ 1116  vi funcName.py
+ 1117  py3 funcName.py 
+ 1118  vi funcName.py
+ 1119  py3 funcName.py 
+ 1120  vi funcName.py
+ 1121  pwd
+ 1122  ls
+ 1123  cd python/
+ 1124  ls
+ 1125  cd pythonHx/
+ 1126  ls
+ 1127  mkdir webServer
+ 1128  ls
+ 1129  cd webServer/
+ 1130  ls
+ 1131  cp -r '/var/run/vmblock-fuse/blockdir/5270b12f-a1af-e33e-416a-1ce424c0f0ea/code' .
+ 1132  ls
+ 1133  cd code/
+ 1134  ls
+ 1135  vi 04_dynamic_web_server.py 
+ 1136  vi MyWebFramework.py 
+ 1137  vi MyWebServer.py 
+ 1138  cd python/
+ 1139  ls
+ 1140  cd pythonHx/
+ 1141  ls
+ 1142  cd webServer/
+ 1143  ls
+ 1144  mv ../../*.py .
+ 1145  ls
+ 1146  mv ../../html .
+ 1147  ls
+ 1148  mv ../../WSGI .
+ 1149  mv ../../.idea/ .
+ 1150  ls
+ 1151  cd ..
+ 1152  ls
+ 1153  cd ..
+ 1154  ls
+ 1155  rm index.html 
+ 1156  ls
+ 1157  mv __pycache__ pythonHx/webServer/
+ 1158  ls
+ 1159  cd ..
+ 1160  ls
+ 1161  cd python/
+ 1162  ls
+ 1163  mkdir -m 755 dataStruct
+ 1164  cd dataStruct/
+ 1165  ls
+ 1166  cd day_1/
+ 1167  ls
+ 1168  py3 01-timeit.py 
+ 1169  ls
+ 1170  vi -O test1 test2
+ 1171  ls
+ 1172  subl
+ 1173  ls
+ 1174  ipython3
+ 1175  sudo apt-get install python-mysql
+ 1176  sudo apt-get install python-mysqldb
+ 1177  ipython3
+ 1178  sudo apt-get install python-mysql
+ 1179  ipython3
+ 1180  sudo apt-get install python3-mysqldb
+ 1181  ipython3
+ 1182  ls
+ 1183  mysql -u root -p
+ 1184  id
+ 1185  mongod
+ 1186  mongo
+ 1187  ls
+ 1188  echo $PATH
+ 1189  mongod
+ 1190  which mongod
+ 1191  sudo mongod
+ 1192  arch
+ 1193  arch -a
+ 1194  arch --help
+ 1195  arch --version
+ 1196  arch
+ 1197  version
+ 1198  uname -a
+ 1199  ls
+ 1200  cd /etc/apt
+ 1201  ls
+ 1202  cd preferences.d/
+ 1203  ls
+ 1204  cd ..
+ 1205  ls
+ 1206  cd ..
+ 1207  ls
+ 1208  cd
+ 1209  ls
+ 1210  cd /usr/
+ 1211  ls
+ 1212  mkdir MongoDB
+ 1213  ls -l
+ 1214  sudo mkdir -m 755 MongoDB
+ 1215  ls
+ 1216  cd MongoDB/
+ 1217  ls
+ 1218  sudo wget -h
+ 1219  sudo wget https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1604-3.4.4.tgz
+ 1220  ls
+ 1221  rm mongodb-linux-x86_64-ubuntu1604-3.4.4.tgz 
+ 1222  ls
+ 1223  sudo rm *
+ 1224  ls
+ 1225  pwd
+ 1226  ls
+ 1227  cp '/var/run/vmblock-fuse/blockdir/527bcf89-c7fb-c714-d95c-d18c8aa568ea/mongodb-linux-x86_64-ubuntu1604-3.4.0.tgz' .
+ 1228  sudo cp '/var/run/vmblock-fuse/blockdir/527bcf89-c7fb-c714-d95c-d18c8aa568ea/mongodb-linux-x86_64-ubuntu1604-3.4.0.tgz' .
+ 1229  ls
+ 1230  cd ..
+ 1231  ls
+ 1232  ls -l
+ 1233  cd MongoDB/
+ 1234  ls
+ 1235  sudo tar -xvz mongodb-linux-x86_64-ubuntu1604-3.4.0.tgz 
+ 1236  sudo tar -xvfz mongodb-linux-x86_64-ubuntu1604-3.4.0.tgz 
+ 1237  sudo tar -xvf mongodb-linux-x86_64-ubuntu1604-3.4.0.tgz 
+ 1238  ls
+ 1239  cd mongodb-linux-x86_64-ubuntu1604-3.4.0/
+ 1240  ls
+ 1241  cd bin
+ 1242  ls
+ 1243  cd ..
+ 1244  ls
+ 1245  cd ..
+ 1246  ls
+ 1247  rm mongodb-linux-x86_64-ubuntu1604-3.4.0 -r
+ 1248  sudo rm mongodb-linux-x86_64-ubuntu1604-3.4.0 -r
+ 1249  ls
+ 1250  sudo tar -zxvf mongodb-linux-x86_64-ubuntu1604-3.4.0.tgz 
+ 1251  ls
+ 1252  cd /usr/local/
+ 1253  ls
+ 1254  cd ..
+ 1255  ls
+ 1256  cd MongoDB/
+ 1257  ls
+ 1258  sudo mv -r mongodb-linux-x86_64-ubuntu1604-3.4.0/ /usr/local/mongodb
+ 1259  sudo mv  mongodb-linux-x86_64-ubuntu1604-3.4.0/ /usr/local/mongodb
+ 1260  ls
+ 1261  cd ..
+ 1262  ls
+ 1263  cd local
+ 1264  ls
+ 1265  cd mongodb/
+ 1266  ls
+ 1267  export PATH=/usr/local/mongodb/bin:$PATH
+ 1268  echo $PATH
+ 1269  cd
+ 1270  ls
+ 1271  vi .bashrc 
+ 1272  source vi .bashrc 
+ 1273  vi source vi .bashrc 
+ 1274  source .bashrc
+ 1275  ls
+ 1276  vi /etc/mongod.conf 
+ 1277  mongod
+ 1278  cd /data
+ 1279  ls
+ 1280  vi /etc/mongod.conf 
+ 1281  mkdir -p /data/db
+ 1282  sudo mkdir -p /data/db
+ 1283  mongod
+ 1284  ls
+ 1285  cd /data/
+ 1286  ls
+ 1287  ls -l
+ 1288  sudo mkdir 777 db
+ 1289  sudo chmod 777 db
+ 1290  ls
+ 1291  mongod
+ 1292  sudo mongod
+ 1293  sudo service mongod start
+ 1294  mongod
+ 1295  sudo mongod
+ 1296  ls
+ 1297  rm 777
+ 1298  sudo mv 777
+ 1299  sudo rm -r 777
+ 1300  ls
+ 1301  ps -ef | grep mongo
+ 1302  sudo service mongod status
+ 1303  vi /var/log/mongodb/mongod.log
+ 1304  sudo mongod
+ 1305  rm /data/db/mongod.lock 
+ 1306  ls
+ 1307  sudo mongod
+ 1308  mongod
+ 1309  sudo chmod 777 /data
+ 1310  mongod
+ 1311  sudo chmod 777 /data/db
+ 1312  mongod
+ 1313  ls
+ 1314  ld -ld
+ 1315  ls -ld
+ 1316  ls -ld /data
+ 1317  cd /data/
+ 1318  ls
+ 1319  ls -l
+ 1320  cd ..
+ 1321  ls
+ 1322  chown python:python /data
+ 1323  sudo chown python:python /data
+ 1324  ls
+ 1325  ls -l
+ 1326  mongod
+ 1327  ls
+ 1328  cd ..
+ 1329  ls
+ 1330  cd /usr/local
+ 1331  ls
+ 1332  cd mongodb/
+ 1333  ls
+ 1334  vi README 
+ 1335  ls
+ 1336  cd bin
+ 1337  ls
+ 1338  ./mongod
+ 1339  ls
+ 1340  sudo vi /etc/mongod.conf 
+ 1341  sudo service mongo restart
+ 1342  sudo service mongod restart
+ 1343  sudo service mongod start
+ 1344  mongod
+ 1345  sudo service mongod status
+ 1346  vi /etc/mongod.conf
+ 1347  vi /lib/systemd/system/mongod.service
+ 1348  sudo su mongodb
+ 1349  ls
+ 1350  pwd
+ 1351  ls
+ 1352  usudo useradd -h
+ 1353  groupadd -h
+ 1354  groupadd mongodb
+ 1355  cat /etc/group
+ 1356  cat /etc/passwd | grep mongodb
+ 1357  su
+ 1358  su mongodb
+ 1359  passwd mongodb
+ 1360  sudo passwd mongodb
+ 1361  su mongodb
+ 1362  whoami
+ 1363  id
+ 1364  su mongodb
+ 1365  su
+ 1366  ls
+ 1367  mongo --host 192.168.1.111 --port 27017
+ 1368  mongod
+ 1369  mongod --port 27019
+ 1370  sudo mongod --port 27019
+ 1371  ls
+ 1372  sudo su mongodb
+ 1373  su mongodb
+ 1374  su mongodb
+ 1375  ls
+ 1376  sudo apt-get install python3-pymongo
+ 1377  sudo apt-get install python-pymongo
+ 1378  mongo
+ 1379  ls
+ 1380  redis-server
+ 1381  ls
+ 1382  cd python/
+ 1383  ls
+ 1384  cd Django/
+ 1385  ls
+ 1386  cd
+ 1387  ls
+ 1388  ls -l
+ 1389  cd ll
+ 1390  ls -la
+ 1391  cd .virtualenvs/
+ 1392  ls
+ 1393  mkvirtualenv sDjangoTest
+ 1394  workon sDjangoTest
+ 1395  pip list
+ 1396  pip freeze
+ 1397  pip install django==1.8.2
+ 1398  ipython3
+ 1399  ipython2
+ 1400  python
+ 1401  python3
+ 1402  cd 
+ 1403  cd python/
+ 1404  ls
+ 1405  mkdir -m 755 Django
+ 1406  ls
+ 1407  cd Django/
+ 1408  ls
+ 1409  django-admin startproject test1
+ 1410  ls
+ 1411  cd test1/
+ 1412  ls
+ 1413  cd test1/
+ 1414  ls
+ 1415  cat settings.py 
+ 1416  ls
+ 1417  cd ..
+ 1418  ls
+ 1419  python manage.py startapp booktest
+ 1420  ls
+ 1421  cd booktest/
+ 1422  ls
+ 1423  cd ,,
+ 1424  cd ..
+ 1425  tree
+ 1426  ls
+ 1427  python manage.py runserver 8080
+ 1428  python manage.py makemigrations
+ 1429  python manage.py migrate
+ 1430  python manage.py shell
+ 1431  python manage.py createsuperuser
+ 1432  python manage.py runserver
+ 1433  python manage.py runserver 8080
+ 1434  deactive
+ 1435  deactivate 
+ 1436  mkvirtualenv sDjangoTest2
+ 1437  workon sDjangoTest2
+ 1438  ls
+ 1439  cd ..
+ 1440  ls
+ 1441  django-admin createproject goods-info
+ 1442  pip list
+ 1443  pip install django=1.8.2
+ 1444  pip install django==1.8.2
+ 1445  django-admin createproject goods-info
+ 1446  ls
+ 1447  django-admin --help
+ 1448  django-admin startproject good-info
+ 1449  django-admin startproject goodinfo
+ 1450  ls
+ 1451  cd goodinfo/
+ 1452  ls
+ 1453  cd goodinfo/
+ 1454  ls
+ 1455  cd ..
+ 1456  ls
+ 1457  cd ..
+ 1458  ls
+ 1459  cd goodinfo/
+ 1460  ls
+ 1461  python manage.py startapp ttsx
+ 1462  ls
+ 1463  python manage.py mkmigrations
+ 1464  python manage.py mkmigration
+ 1465  python manage.py makemigrations
+ 1466  python manage.py migrate
+ 1467  python manage.py makemigrations
+ 1468  python manage.py --help | grep migra
+ 1469  python manage.py makemigrations
+ 1470  python manage.py makemigration
+ 1471  python manage.py makemigrations
+ 1472  workon sDjangoTest2
+ 1473  ls
+ 1474  cd python
+ 1475  ls
+ 1476  cd Django/
+ 1477  ls
+ 1478  cd goodinfo/
+ 1479  ls
+ 1480  cd ttsx/
+ 1481  ls
+ 1482  cd migrations/
+ 1483  ls
+ 1484  cd ..
+ 1485  ls
+ 1486  cd ..
+ 1487  ls
+ 1488  python manage.py shell
+ 1489  cd python/Django/goodsinfo/
+ 1490  ls
+ 1491  cd ttsx/
+ 1492  ls
+ 1493  cat models.py 
+ 1494  cd ..
+ 1495  ls
+ 1496  cd ..
+ 1497  ls
+ 1498  cd goodinfo
+ 1499  ls
+ 1500  cd ,,
+ 1501  cd ..
+ 1502  ls
+ 1503  cd goodinfo.bak/
+ 1504  ls
+ 1505  cd ttsx/
+ 1506  ls
+ 1507  cat models.py
+ 1508  workon sDjangoTest2
+ 1509  ls
+ 1510  cd python/
+ 1511  ls
+ 1512  cd Django/
+ 1513  ls
+ 1514  rm goodinfo*
+ 1515  rm goodinfo* -r
+ 1516  ls
+ 1517  cd goodsinfo/
+ 1518  ls
+ 1519  python manage.py shell
+ 1520  redis-cli
+ 1521  ls
+ 1522  cd ..
+ 1523  ls
+ 1524  cd captcha_iframe_python/
+ 1525  ls
+ 1526  python server.py 
+ 1527  cd ..
+ 1528  ls
+ 1529  cd test4
+ 1530  ls
+ 1531  python manage.py runserver
+ 1532  cd ..
+ 1533  l
+ 1534  ls
+ 1535  django-admin startproject test5
+ 1536  cd test5
+ 1537  ls
+ 1538  python manage.py startapp booktest
+ 1539  ls
+ 1540  python manage.py runserver
+ 1541  ls
+ 1542  python manage.py makemigrations
+ 1543  python manage.py migrate
+ 1544  python manage.py makemigrations
+ 1545  python manage.py migrate
+ 1546  python manage.py makemigrations
+ 1547  python manage.py migrate
+ 1548  python manage.py makemigrations
+ 1549  python manage.py migrate
+ 1550  python manage.py runserver
+ 1551  ls
+ 1552  cd ..
+ 1553  ls
+ 1554  cd test5
+ 1555  l
+ 1556  ls
+ 1557  pip install django-tinymce-2.4.0
+ 1558  ls
+ 1559  pip install django-tinymce-4
+ 1560  pip install django-tinymce
+ 1561  pip install /simple/django-tinymce
+ 1562  python apt-get install django-tinymce
+ 1563  pip install django-tinymce
+ 1564  pip install -h
+ 1565  pip install django-tinymce-4 --extra-index-url https://pypi.python.org/pypi/django-tinymce-4/0.0.18
+ 1566  ping www.baidu.com
+ 1567  ls
+ 1568  cd ..
+ 1569  ls
+ 1570  cp '/var/run/vmblock-fuse/blockdir/529b5bb6-3453-b9a4-a98b-38a14aca74be/django-tinymce-4-0.0.18.tar.gz' .
+ 1571  ls
+ 1572  tar -zxvf django-tinymce-4-0.0.18.tar.gz 
+ 1573  ls
+ 1574  cd django-tinymce-4-0.0.18/
+ 1575  ls
+ 1576  pip install setup.py
+ 1577  pip django_tinymce install
+ 1578  pip django-tinymce install
+ 1579  pip setup.py install
+ 1580  ls
+ 1581  pip ./setup.py install
+ 1582  ls
+ 1583  vi README.rst 
+ 1584  pip install django-ticnymce-4
+ 1585  ls
+ 1586  cd tinymce_4/
+ 1587  ls
+ 1588  cd ..
+ 1589  ls
+ 1590  vi setup.py
+ 1591  python setup.py install
+ 1592  pip list
+ 1593  ls
+ 1594  cd ..
+ 1595  ls
+ 1596  cd test5
+ 1597  ls
+ 1598  python manage.py makemigrations
+ 1599  python manage.py migrate
+ 1600  python manage.py runserver
+ 1601  python manage.py createsuperuser 
+ 1602  python manage.py runserver
+ 1603  cd ..
+ 1604  ls
+ 1605  pip install django-redis-cache
+ 1606  cd
+ 1607  pip list
+ 1608  pip install django-redis-sessions
+ 1609  pip install django-redis-cache
+ 1610  pip list
+ 1611  pip install django-haystack
+ 1612  ls
+ 1613  which pip
+ 1614  cd /home/python/.virtualenvs/sDjangoTest2
+ 1615  ls
+ 1616  cd lib/
+ 1617  ls
+ 1618  cd python2.7/
+ 1619  ls
+ 1620  cd site-packages/
+ 1621  ls
+ 1622  cd pip
+ 1623  ls
+ 1624  cd utils/
+ 1625  ls
+ 1626  cd ..
+ 1627  ls
+ 1628  cd compat/
+ 1629  ls
+ 1630  cd ..
+ 1631  ls
+ 1632  cd ..
+ 1633  ls
+ 1634  cd ..
+ 1635  cd
+ 1636  pip install django-haystack
+ 1637  cd /etc/
+ 1638  ls
+ 1639  cd ..
+ 1640  ls
+ 1641  cd
+ 1642  ls
+ 1643  deactivate 
+ 1644  ls
+ 1645  sudo apt-get install pip
+ 1646  sudo apt-get install python-pip
+ 1647  ls -la
+ 1648  ls
+ 1649  cd /usr/
+ 1650  ls
+ 1651  cd local
+ 1652  ls
+ 1653  cd python3.4/
+ 1654  ls
+ 1655  cd include/
+ 1656  ls
+ 1657  cd ..
+ 1658  ls
+ 1659  cd ..
+ 1660  ls
+ 1661  cd
+ 1662  ls
+ 1663  vi ~/.pip/pip.conf 
+ 1664  ls -la
+ 1665  cd /etc/
+ 1666  ls
+ 1667  vi pip.conf
+ 1668  touch pip.cong
+ 1669  sudo touch pip.cong
+ 1670  ls -l vsftpd.conf 
+ 1671  ls -l sensors3.conf 
+ 1672  ls
+ 1673  vi pip.cong 
+ 1674  mv pip.cong pip.conf
+ 1675  sudo mv pip.cong pip.conf
+ 1676  sudo vi pip.conf
+ 1677  ls
+ 1678  source pip.conf 
+ 1679  ;s
+ 1680  cd
+ 1681  ls
+ 1682  workon sDjangoTest2
+ 1683  pip list
+ 1684  pip list --format=columns
+ 1685  pip install jieba
+ 1686  pip install haystack
+ 1687  pip install whoosh
+ 1688  pip freez
+ 1689  pip freeze
+ 1690  cd python/Django/
+ 1691  ls
+ 1692  django-admin startproject test6
+ 1693  ls
+ 1694  cd test6
+ 1695  ls
+ 1696  python manage.py startapp booktest
+ 1697  pip install uwsgi
+ 1698  python manage.py runserver
+ 1699  uwsgi --ini uwsgi
+ 1700  uwsgi --ini uwsgi.ini
+ 1701  ps -ef | grep uwsgi|wc -l
+ 1702  uwsgi --restart uwsgi.pid 
+ 1703  uwsgi --reload uwsgi.pid 
+ 1704  ps -ef | grep uwsgi
+ 1705  uwsgi --stop uwsgi.pid
+ 1706  ps -ef | grep uwsgi
+ 1707  uwsgi --ini uwsgi.ini
+ 1708  sudo apt-get nginx
+ 1709  sudo apt-get install nginx
+ 1710  pip list
+ 1711  which nginx
+ 1712  nginx --version
+ 1713  nginx -version
+ 1714  nginx version
+ 1715  nginx --help
+ 1716  nginx -h
+ 1717  nginx -v
+ 1718  nginx
+ 1719  sudo nginx
+ 1720  sudo conf/nginx.conf
+ 1721  cd /usr/
+ 1722  ls
+ 1723  cd sbin
+ 1724  ls
+ 1725  cd ..
+ 1726  ls
+ 1727  sudo nginx
+ 1728  sudo nginx -h
+ 1729  cd /usr/share
+ 1730  ls
+ 1731  cd nginx/
+ 1732  ls
+ 1733  cd html/
+ 1734  ls
+ 1735  cd ..
+ 1736  ls
+ 1737  cd ..
+ 1738  deactivate 
+ 1739  cd /etc/nginx/
+ 1740  ls
+ 1741  sudo vi nginx.conf 
+ 1742  sudo nginx
+ 1743  sudo nginx -s reload
+ 1744  ls
+ 1745  vi nginx.conf 
+ 1746  sudo vi nginx.conf 
+ 1747  sudo nginx reload
+ 1748  sudo nginx 
+ 1749  sudo nginx --reload
+ 1750  sudo nginx --h
+ 1751  sudo nginx -h
+ 1752  sudo nginx -s reload
+ 1753  ps -ef | grep nginx
+ 1754  sudo nginx -s reload
+ 1755  vi nginx.conf 
+ 1756  sudo vi nginx.conf 
+ 1757  sudo nginx -s reload
+ 1758  ls
+ 1759  cd sites-available/
+ 1760  ls
+ 1761  vi default 
+ 1762  sudo vi default 
+ 1763  sudo nginx -s stop
+ 1764  sudo nginx
+ 1765  ls
+ 1766  cd ..
+ 1767  ls
+ 1768  cd sites-
+ 1769  cd sites-enabled/
+ 1770  ls
+ 1771  vi default 
+ 1772  cd
+ 1773  ls
+ 1774  cd /var/
+ 1775  ls
+ 1776  cd www
+ 1777  ls
+ 1778  sudo mkdir -p -m 777 test6/static
+ 1779  ls
+ 1780  ls -l
+ 1781  cd test6/
+ 1782  ls
+ 1783* 
+ 1784  cd ..
+ 1785  ls
+ 1786  mkdir -p -m 777 test6/static
+ 1787  ls
+ 1788  cd test6/
+ 1789  ls
+ 1790  ls -l
+ 1791  cd ..
+ 1792  ls
+ 1793  ls -l
+ 1794  chmod 777 test6
+ 1795  sudo chmod 777 test6
+ 1796  ls
+ 1797  cd test6
+ 1798  ls
+ 1799  cd ..
+ 1800  ls
+ 1801  ls -l
+ 1802  sudo chown python:python test6
+ 1803  ls
+ 1804  cd test6/
+ 1805  ls
+ 1806  chown python:python static
+ 1807  ls -l
+ 1808  sudo chown python:python static
+ 1809  ls
+ 1810  cd static/
+ 1811  ls
+ 1812  cd ..
+ 1813  ls
+ 1814  ls -l
+ 1815  cd static/
+ 1816  ls
+ 1817  touch xxx
+ 1818  ls
+ 1819  rm xxx
+ 1820  ls
+ 1821  cd /etc/nginx/
+ 1822  ls
+ 1823  cd sites-available/
+ 1824  ls
+ 1825  vi default 
+ 1826  sudo vi default 
+ 1827  sudo nginx -s reload
+ 1828  ls
+ 1829  cd ..
+ 1830  ls
+ 1831  vi nginx.conf 
+ 1832  sudo vi nginx.conf 
+ 1833  sudo nginx -s reload
+ 1834  vi /etc/nginx/sites-enabled/default
+ 1835  sudo nginx -s reload
+ 1836  ls
+ 1837  sudo vi sites-available/default 
+ 1838  sudo nginx -s reload
+ 1839  ps -ef | grep nginx
+ 1840  sudo nginx -t -c .conf
+ 1841  sudo nginx -t -c nginx.conf
+ 1842  sudo /usr/share/nginx/nginx.conf
+ 1843  sudo vi /usr/share/nginx/nginx.conf
+ 1844  rm /usr/share/nginx/nginx.conf 
+ 1845  sudo rm /usr/share/nginx/nginx.conf 
+ 1846  sudo
+ 1847  sudo nginx -t -c /etc/nginx/nginx.conf 
+ 1848  vi /etc/nginx/sites-enabled/default
+ 1849  ls
+ 1850  vi nginx.conf 
+ 1851  sudo vi nginx.conf 
+ 1852  sudo nginx -t -c nginx.conf 
+ 1853  sudo nginx -t -c ./nginx.conf 
+ 1854  sudo nginx -s reload
+ 1855  git --version
+ 1856  sudo apt-get install git
+ 1857  git
+ 1858  git -help -a
+ 1859  cd
+ 1860  ls
+ 1861  git --version
+ 1862  ssh-key -t rsa -C "2569500885@qq.com"
+ 1863  ssh-keygen -t rsa -C "2569500885@qq.com"
+ 1864  cd .ssh/
+ 1865  ls
+ 1866  vi id_rsa.pub 
+ 1867  vi id_rsa
+ 1868  vi id_rsa.pub 
+ 1869  cat /home/python/.ssh/id_rsa.pub
+ 1870  cd
+ 1871  ls
+ 1872  cd python/
+ 1873  ls
+ 1874  cd Django/
+ 1875  ls
+ 1876  git clone ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDB2KEjH+x9DS5cnx64M/PKxADO9oPNVD8/pHJ6clu/DYFQpdvYbwfWJUVqT157g5KsN1j95cpw3No+yc+2oCEiM7z7tpLmZVqPMgfQ/Tx9QK/zai2y5q8PZGwtSSvTdfZeDzdtLrpsWeK5ruh+8gLeEcND+JZeOUz/F6eCsHF4th2LdEDG/TsO1XNZWUjLV55ESDXi5RseYbodgqIYCQh+s5l4oc3wPfiGb4ce+ho17o3+Yp/QuNNHAwrecypD/9lX4ej1xIQ7rJyMPnPjRMXlLRNyEncWVWGLtTbO0JQKfo8Md7E4Y/S35biVGJAj3iUIku0w7zhOOZg67wbiiQs5 2569500885@qq.com
+ 1877  ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDB2KEjH+x9DS5cnx64M/PKxADO9oPNVD8/pHJ6clu/DYFQpdvYbwfWJUVqT157g5KsN1j95cpw3No+yc+2oCEiM7z7tpLmZVqPMgfQ/Tx9QK/zai2y5q8PZGwtSSvTdfZeDzdtLrpsWeK5ruh+8gLeEcND+JZeOUz/F6eCsHF4th2LdEDG/TsO1XNZWUjLV55ESDXi5RseYbodgqIYCQh+s5l4oc3wPfiGb4ce+ho17o3+Yp/QuNNHAwrecypD/9lX4ej1xIQ7rJyMPnPjRMXlLRNyEncWVWGLtTbO0JQKfo8Md7E4Y/S35biVGJAj3iUIku0w7zhOOZg67wbiiQs5 2569500885@qq.com
+ 1878  git clone https://github.com/bmufangt/bangmut.git
+ 1879  ls
+ 1880  cd bangmut/
+ 1881  ls
+ 1882  cat README.md 
+ 1883  git log
+ 1884  ls
+ 1885  cd ..
+ 1886  ls
+ 1887  rm bangmut -rf
+ 1888  ls
+ 1889  git config --global user.name 'shilx'
+ 1890  git config --global user.email 2569500885@qq.com
+ 1891  git config --get
+ 1892  git config --get user
+ 1893  git config --get user*
+ 1894  git config --get user.*
+ 1895  git config --get user.name
+ 1896  git config --get user.emali
+ 1897  git config --get user.email
+ 1898  git clone https://github.com/bmufangt/bangmut.git
+ 1899  ls
+ 1900  cd bangmut/
+ 1901  ls
+ 1902  git log
+ 1903  workon sDjangoTest2
+ 1904  ls
+ 1905  cat test.txt>>
+ 1906  cat test.txt >>
+ 1907  cat >> test.txt
+ 1908  ls
+ 1909  cat test.txt 
+ 1910  git add ./
+ 1911  git status
+ 1912  git commit -m 'create test.txt'
+ 1913  git push origin master 
+ 1914  git log
+ 1915  ls
+ 1916  cat test.txt 
+ 1917  git pull
+ 1918  ls
+ 1919  cat test.txt 
+ 1920  ls
+ 1921  vi test.txt 
+ 1922  ls
+ 1923  git show
+ 1924  git show-branch
+ 1925  git shortlog 
+ 1926  git log --pretty=oneline
+ 1927  git log --pretty=twoline
+ 1928  git log --pretty=short
+ 1929  git log --pretty=emali
+ 1930  git log --pretty=email
+ 1931  git log --pretty=oneline 
+ 1932  git reset HEAD
+ 1933  ls
+ 1934  cat test.txt 
+ 1935  git checkout test.txt
+ 1936  ls
+ 1937  cat test.txt 
+ 1938  git checkout -all
+ 1939  git checkin test.txt
+ 1940  ls
+ 1941  git worktree 
+ 1942  git worktree list
+ 1943  git diff HEAD HEAD^
+ 1944  cat test.txt 
+ 1945  git branch
+ 1946  git branch ttsx
+ 1947  git checkout ttsx
+ 1948  git branch
+ 1949  git reflog 
+ 1950  history
+ 1951  history -h
+ 1952  history -10
+ 1953  history -n 10
+ 1954  history> history.txt
