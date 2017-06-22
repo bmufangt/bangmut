@@ -8,12 +8,10 @@ from models import *
 
 # Create your views here.
 def register(request):
-    print('eeeeee')
     return render(request, 'ttsx_user/register.html',{'title':'注册'})
 
 
 def register_handle(request):
-    print('hhhhhhh')
     uname = request.POST.get('user_name')
     upwd = request.POST['pwd']
     upwd2 = request.POST['cpwd']
@@ -75,15 +73,15 @@ def login_handle(request):
 def user_center_info(request):
     uname = request.session.get('uname')
     uemail = request.session.get('uemail')
-    return render(request,'ttsx_user/user_center_info.html',{'title':'个人中心','uname':uname,'uemail':uemail})
+    return render(request,'ttsx_user/user_center_info.html',{'title':'个人中心','uname':uname,'uemail':uemail,"has_car":0})
 
 
 def user_center_order(request):
-    return render(request,'ttsx_user/user_center_order.html',{'title':'全部订单'})
+    return render(request,'ttsx_user/user_center_order.html',{'title':'全部订单',"has_car":0})
 
 
 def user_center_site(request):
-    return render(request,'ttsx_user/user_center_site.html',{'title':'收货地址'})
+    return render(request,'ttsx_user/user_center_site.html',{'title':'收货地址',"has_car":0})
 
 def user_center_site_handle(request):
     users = UserInfo.objects.get(uname=request.session.get('uname'))
@@ -93,6 +91,6 @@ def user_center_site_handle(request):
         users.urecvaddr = request.POST.get('recvaddr')
         users.uphone = request.POST.get('phone')
         users.save()
-    context = {'title':'收货地址','users':users}
+    context = {'title':'收货地址','users':users,"has_car":0}
     return render(request, 'ttsx_user/user_center_site.html',context)
 
