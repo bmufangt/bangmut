@@ -28,22 +28,26 @@ def index(request):
     return render(request, 'ttsx_goods/index.html',context)
 
 def list(request,tid,pindex,sort):
-    types = TypeInfo.objects.all()
+    typeinfo = TypeInfo.objects.get(pk=int(tid))
 
     #默认排序，最新　sort=1
     if sort == '1':
-        type_list = types[int(tid)-1].goodsinfo_set.order_by('-id')
+        type_list = typeinfo.goodsinfo_set.order_by('-id')
     #　价格
     if sort == '2':
-        type_list = types[int(tid)-1].goodsinfo_set.order_by('-gprice')
+        type_list = typeinfo.goodsinfo_set.order_by('-gprice')
     #　人气
     if sort == '3':
-        type_list = types[int(tid)-1].goodsinfo_set.order_by('-gclick')
+        type_list = typeinfo.goodsinfo_set.order_by('-gclick')
 
-    p = Paginator(type_list,12)
+    p = Paginator(type_list,8)
     goods = p.page(int(pindex))
-    context = {'title': '首页', 'has_car': 1,
-               'type': goods,
+    context = {'title': '首页',
+               'has_car': 1,
+                'type': goods,
+                'sort': sort,
+                'pindex': int(pindex),
+                'typeinfo':typeinfo,
                }
     return render(request,'ttsx_goods/list.html',context)
 
