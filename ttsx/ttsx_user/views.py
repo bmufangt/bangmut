@@ -58,6 +58,7 @@ def login_handle(request):
     if len(users) == 1:
         if upwd3 == users[0].upwd:
             request.session['uname'] = users[0].uname
+            request.session['uid'] = users[0].id
             request.session['uemail'] = users[0].uemail
             context = {'title':'登录','errorname': 0,'errorpwd': 0}
             return JsonResponse(context)

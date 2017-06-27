@@ -1,7 +1,135 @@
 {%extends 'base_banner.html'%}
-{%block body_banner%}
+{%block head%}
+<script>
+   $(function () {
+//        ajax处理csrf
+                $.ajaxSetup({
+                 data: {csrfmiddlewaretoken: '{{ csrf_token }}' },
+            });
+        $('.num_show').each(function () {
+            if ($(this).val()==1)
+                $(this).next().hide();
+            total_price = parseFloat($(this).closest('li').prev().html()) * parseInt($(this).val());
+            $(this).closest('li').next().html(total_price.toFixed(2)+'元');
 
-	<div class="total_count">全部商品<em>2</em>件</div>	
+        })
+       total();
+
+
+//        全选全消
+        $('#check_all').click(function () {
+            status = $(this).prop('checked');
+            if (status == 'false')
+                $(':checkbox:not(#check_all)').prop('checked',false);
+            else
+                $(':checkbox:not(#check_all)').prop('checked',true);
+
+//            $(':checkbox:not(#check_all)').attr('checked',status);
+        })
+
+       $(':checkbox:not(#check_all)').click(function () {
+           status = $(this).prop('checked');
+           if (status == 'false')
+               $('#check_all').prop('checked',false);
+           else
+               if($(':checked').length + 1 == $(':checkbox').length)
+                    $('#check_all').prop('checked',true);
+           total();
+
+       })
+
+//       function total() {
+//            var total_price = 0;
+//           $('.num_show').each(function () {
+//               total_price += parseFloat($(this).closest('li').prev().html()) * parseInt($(this).val());
+//            })
+//           $('.settlements em').html(total_price.toFixed(2)+'元');
+//       }
+
+       function total() {
+           total_num = 0;
+           totals = 0;
+           $(':checked:not(#check_all)').each(function () {
+               totals += parseFloat($(this).parent().siblings('.col07').html());
+               total_num += 1;
+           })
+           $('.settlements em').html(totals.toFixed(2)+'元');
+           $('.settlements b').html(total_num);
+       }
+
+//       数量＋
+        function add() {
+            num = parseInt($(this).next().val());
+            if(num==1)
+                $(this).next().next().show();
+            $(this).next().val(num+1);
+            total_price =parseFloat($(this).closest('li').prev().html()) * parseInt($(this).next().val());
+            $(this).closest('li').next().html(total_price.toFixed(2)+'元');
+            $.post('/car_modify/',{'goodsnum':$(this).next().val(),'goodsid':$(this).attr('name')});
+            total();
+//            if(Math.round(newclick.getTime()-lastclick.getTime()) > 500) {
+//                lastclick = newclick;
+//                console.log('aaaa');
+//                 total_price =parseFloat($(this).closest('li').prev().html()) * parseInt($(this).next().val());
+////            alert(total_price);
+//            $(this).closest('li').next().html(total_price.toFixed(2)+'元');
+//            }
+//            send_goodsnum_to_server();
+        }
+
+
+        $('.add').click(add);
+
+         $('.minus').click(function () {
+//            $(this).show();
+            num = parseInt($(this).prev().val());
+            if(num ==2)
+                $(this).hide();
+            if(num<2)
+            {
+                num=2;
+            }
+            $(this).prev().val(num-1);
+            total_price =parseFloat($(this).closest('li').prev().html()) * parseInt($(this).prev().val());
+            $(this).closest('li').next().html(total_price.toFixed(2)+'元');
+
+//             $(this).mouseout(function () {
+//                 alert(1);
+//                $('.num_show').val();
+//                $.post('/car/',{'goodsnum':$('.num_show').val(),'goodsid':$(this).attr(name)});
+//                $(this).unbind('mouseout');
+//             });
+             $.post('/car_modify/',{'goodsnum':$(this).prev().val(),'goodsid':$(this).attr('name')});
+             total();
+        })
+
+        $('.num_show').keyup(function () {
+            if (isNaN(parseInt($(this).val())))
+                $(this).val(1);
+            if (parseInt($(this).val()) > 100 )
+                $(this).val(100)
+
+            if (parseInt($(this).val()) < 1 )
+                $(this).val(1)
+            $(this).val(parseInt($(this).val()));
+            total_price =parseFloat($(this).closest('li').prev().html()) * parseInt($(this).val());
+            $(this).closest('li').next().html(total_price.toFixed(2)+'元');
+            $.post('/car_modify/',{'goodsnum':$(this).val(),'goodsid':$(this).next().attr('name')});
+            total();
+        })
+
+        $('.cart_list_td #delgoods').click(function () {
+            alert('click');
+            $.post('/car_del/',{'goodsid':$(this).closest('ul').attr('name')});
+            $(this).parents('ul').remove();
+            $('.total_count em').html(parseInt($('.total_count em').html()) - 1);
+            total();
+        })
+    })
+</script>
+{%endblock head%}
+{%block body_banner%}
+	<div class="total_count">全部商品<em>{{count}}</em>件</div>
 	<ul class="cart_list_th clearfix">
 		<li class="col01">商品名称</li>
 		<li class="col02">商品单位</li>
@@ -10,45 +138,52 @@
 		<li class="col05">小计</li>
 		<li class="col06">操作</li>
 	</ul>
-	<ul class="cart_list_td clearfix">
-		<li class="col01"><input type="checkbox" name="" checked></li>
-		<li class="col02"><img src="/static/images/goods/goods012.jpg"></li>
-		<li class="col03">奇异果<br><em>25.80元/500g</em></li>
-		<li class="col04">500g</li>
-		<li class="col05">25.80元</li>
-		<li class="col06">
-			<div class="num_add">
-				<a href="javascript:;" class="add fl">+</a>
-				<input type="text" class="num_show fl" value="1">	
-				<a href="javascript:;" class="minus fl">-</a>	
-			</div>
-		</li>
-		<li class="col07">25.80元</li>
-		<li class="col08"><a href="javascript:;">删除</a></li>
-	</ul>
+	<!--<ul class="cart_list_td clearfix">-->
+		<!--<li class="col01"><input type="checkbox" name="" checked></li>-->
+		<!--<li class="col02"><img src="/static/images/goods/goods012.jpg"></li>-->
+		<!--<li class="col03">奇异果<br><em>25.80元/500g</em></li>-->
+		<!--<li class="col04">500g</li>-->
+		<!--<li class="col05">25.80元</li>-->
+		<!--<li class="col06">-->
+			<!--<div class="num_add">-->
+				<!--<a href="javascript:;" class="add fl">+</a>-->
+				<!--<input type="text" class="num_show fl" value="1">	-->
+				<!--<a href="javascript:;" class="minus fl">-</a>	-->
+			<!--</div>-->
+		<!--</li>-->
+		<!--<li class="col07">25.80元</li>-->
+		<!--<li class="col08"><a href="javascript:;">删除</a></li>-->
+	<!--</ul>-->
 
-	<ul class="cart_list_td clearfix">
-		<li class="col01"><input type="checkbox" name="" checked></li>
-		<li class="col02"><img src="/static/images/goods/goods003.jpg"></li>
-		<li class="col03">大兴大棚草莓<br><em>16.80元/500g</em></li>
-		<li class="col04">500g</li>
-		<li class="col05">16.80元</li>
-		<li class="col06">
-			<div class="num_add">
-				<a href="javascript:;" class="add fl">+</a>
-				<input type="text" class="num_show fl" value="1">	
-				<a href="javascript:;" class="minus fl">-</a>	
-			</div>
-		</li>
-		<li class="col07">16.80元</li>
-		<li class="col08"><a href="javascript:;">删除</a></li>
-	</ul>
+    <!--<ul class="car_list_td clearfix">-->
+        {%for g in ucar_goods_list%}
+		<ul class="cart_list_td clearfix" name="{{g.id}}">
+            <li class="col01"><input type="checkbox" checked=""></li>
+			<li class="col02"><img src="/static/{{g.gimage}}"></li>
+			<li class="col03">{{g.gtitle}}<br><em>{{g.gprice}}元/{{g.gunit}}</em></li>
+			<li class="col04">{{g.gunit}}</li>
+			<li class="col05">{{g.gprice}}元</li>
+			<li class="col06">
+				<div class="num_add">
+					<a href="javascript:;" class="add fl" name="{{g.id}}">+</a>
+					<input type="text" class="num_show fl" value="{{g.gcount}}">
+					<a href="javascript:;" class="minus fl " name="{{g.id}}">-</a>
+				</div>
+			</li>
+			<li class="col07"></li>
+			<li class="col08"><a href="javascript:;" id="delgoods">删除{{g.id}}</a></li>
+		</ul>
+        {%endfor%}
+        <!--{{ucar_goods_list.gtitle}}-->
+    <!--</ul>-->
+
+
 	
 
 	<ul class="settlements">
-		<li class="col01"><input type="checkbox" name="" checked=""></li>
+		<li class="col01"><input type="checkbox" name=""  checked="" id="check_all"></li>
 		<li class="col02">全选</li>
-		<li class="col03">合计(不含运费)：<span>¥</span><em>42.60</em><br>共计<b>2</b>件商品</li>
-		<li class="col04"><a href="place_order.html">去结算</a></li>
+		<li class="col03">合计(不含运费)：<span>¥</span><em></em><br>共计<b></b>件商品</li>
+		<li class="col04"><a href="/place_order">去结算</a></li>
 	</ul>
 {%endblock body_banner%}

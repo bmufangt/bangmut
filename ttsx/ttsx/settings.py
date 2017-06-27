@@ -40,6 +40,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'ttsx_user',
     'ttsx_goods',
+    'ttsx_car',
     'tinymce_4',
 )
 
@@ -84,7 +85,7 @@ DATABASES = {
         'NAME': 'ttsxdb',
         'USER': 'root',
         'PASSWORD': 'mysql',
-        'HOST': 'localhost',
+        'HOST': '192.168.1.111',
         'PORT': '3306',
 
     }

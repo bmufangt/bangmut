@@ -1,5 +1,17 @@
 {%extends 'base_banner.html'%}
-
+{%block head%}
+<script>
+    $(function () {
+        $.ajaxSetup({
+            data: {csrfmiddlewaretoken: '{{csrf_token}}'}
+        })
+        $('.operate>#add_car').click(function () {
+              goodsid = $(this).attr('name');
+            $.post('/car/'+goodsid,{'goodsnum': 1,'id':goodsid})
+        })
+    })
+</script>
+{%endblock head%}
 {%block body_banner%}
 	<div class="navbar_con">
 		<div class="navbar clearfix">
@@ -37,6 +49,7 @@
 				<h3>新品推荐</h3>
 				<ul>
                     {%for g in type%}
+                    {{g}}
                      {%if forloop.counter <= 2 %}
 					<li>
 						<a href="{{g.gid}}"><img src="/static/{{g.gimage}}"></a>
@@ -64,7 +77,7 @@
 					<div class="operate">
 						<span class="prize">￥{{g.gprice}} {{g.id}}</span>
 						<span class="unit">{{g.gprice}}/{{g.gunit}}</span>
-						<a href="#" class="add_goods" title="加入购物车"></a>
+						<a href="javascript:;" class="add_goods" id="add_car" name={{g.id}} title="加入购物车"></a>
 					</div>
 				</li>
                 {%endfor%}
