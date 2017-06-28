@@ -41,7 +41,9 @@ INSTALLED_APPS = (
     'ttsx_user',
     'ttsx_goods',
     'ttsx_car',
+    'ttsx_order',
     'tinymce_4',
+    'haystack',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -116,3 +118,16 @@ STATICFILES_DIRS = [
 
 # error MEDIA_ROOT = [os.path.join]
 MEDIA_ROOT = os.path.join(BASE_DIR,'static')
+
+#全文检索，添加搜索引擎
+HAYSTACK_CONNECTIONS = {
+    'default': {
+        'ENGINE': 'haystack.backends.whoosh_cn_backend.WhooshEngine',
+        'PATH': os.path.join(BASE_DIR, 'whoosh_index'),
+    }
+}
+
+#自动生成索引
+HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
+HAYSTACK_DEFAULT_OPERATOR = 'OR'
+HAYSTACK_SEARCH_RESULT_PER_PAGE = 6

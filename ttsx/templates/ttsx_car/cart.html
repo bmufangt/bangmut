@@ -3,9 +3,10 @@
 <script>
    $(function () {
 //        ajax处理csrf
-                $.ajaxSetup({
+       $.ajaxSetup({
                  data: {csrfmiddlewaretoken: '{{ csrf_token }}' },
             });
+
         $('.num_show').each(function () {
             if ($(this).val()==1)
                 $(this).next().hide();
@@ -27,7 +28,7 @@
 //            $(':checkbox:not(#check_all)').attr('checked',status);
         })
 
-       $(':checkbox:not(#check_all)').click(function () {
+       $(':checkbox').click(function () {
            status = $(this).prop('checked');
            if (status == 'false')
                $('#check_all').prop('checked',false);
@@ -125,6 +126,34 @@
             $('.total_count em').html(parseInt($('.total_count em').html()) - 1);
             total();
         })
+
+       $('#settlement').click(function () {
+//           if ($(':checked:not(#check_all)').length > 0)
+           dict = {};
+           str = '';
+           $(':checked:not(#check_all)').each(function () {
+               str += '{'+'"'+'goodsid'+'"'+':'+$(this).closest('ul').attr('name') +','+'"'+'goodsnum'+'"'+':'+$(this).parent().siblings('.col06').find('.num_show').val()+'},';
+           })
+
+//           console.log(str.length);
+           str = '['+str+']';
+//           str = {'a':1}
+//           console.log(JSON.parse(str));
+
+           if　(str.length !== 0)
+                $.ajax({
+                    url:'/place_order/',
+                    type: 'post',
+                    data:{'str':str},
+//                    success:function (data) {
+//                        window.location.href = '/place_order_handle';
+////                        return false;
+//                    }
+
+                })
+           else
+               alert('请选择要购买的商品哦');
+       })
     })
 </script>
 {%endblock head%}
@@ -184,6 +213,6 @@
 		<li class="col01"><input type="checkbox" name=""  checked="" id="check_all"></li>
 		<li class="col02">全选</li>
 		<li class="col03">合计(不含运费)：<span>¥</span><em></em><br>共计<b></b>件商品</li>
-		<li class="col04"><a href="/place_order">去结算</a></li>
+		<li class="col04"><a href="/place_order_handle" id="settlement">去结算</a></li>
 	</ul>
 {%endblock body_banner%}
