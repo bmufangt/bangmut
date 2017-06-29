@@ -5,6 +5,8 @@ from django.shortcuts import render,redirect
 from django.http import HttpResponse,JsonResponse,HttpResponseRedirect
 from hashlib import sha1
 from models import *
+from ttsx_goods.models import *
+import user_decorator
 
 # Create your views here.
 def register(request):
@@ -57,10 +59,12 @@ def login_handle(request):
 
     if len(users) == 1:
         if upwd3 == users[0].upwd:
+            url = request.COOKIES.get('url','/')
+            print(url)
             request.session['uname'] = users[0].uname
             request.session['uid'] = users[0].id
             request.session['uemail'] = users[0].uemail
-            context = {'title':'登录','errorname': 0,'errorpwd': 0}
+            context = {'title':'登录','errorname': 0,'errorpwd': 0,'url':url,'uname':users[0].uname}
             return JsonResponse(context)
         else:
             context = {'title':'登录','errorname': 0,'errorpwd': 1}
@@ -71,16 +75,26 @@ def login_handle(request):
         return JsonResponse(context)
 
 
+def logout(request):
+    del request.session['uname'],request.session['uid']
+    return redirect('/')
+@user_decorator.login
 def user_center_info(request):
     uname = request.session.get('uname')
     uemail = request.session.get('uemail')
-    return render(request,'ttsx_user/user_center_info.html',{'title':'个人中心','uname':uname,'uemail':uemail,"has_car":0})
 
+    goodsids = request.COOKIES.get('goodsids','')
+    goodsids1 = goodsids.split(',')
+    goodslist = []
+    for goodsid in goodsids1:
+        goodslist.append(GoodsInfo.objects.get(id=int(goodsid)))
+    return render(request,'ttsx_user/user_center_info.html',{'title':'个人中心','uname':uname,'uemail':uemail,"has_car":0,'goodslist':goodslist})
 
+@user_decorator.login
 def user_center_order(request):
     return render(request,'ttsx_user/user_center_order.html',{'title':'全部订单',"has_car":0})
 
-
+@user_decorator.login
 def user_center_site(request):
     return render(request,'ttsx_user/user_center_site.html',{'title':'收货地址',"has_car":0})
 

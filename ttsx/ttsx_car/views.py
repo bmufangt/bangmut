@@ -4,9 +4,10 @@ from django.http import HttpResponse,JsonResponse
 # from django.db import models
 from models import *
 from ttsx_goods.models import *
+from ttsx_user.user_decorator import *
 # Create your views here.
 
-
+@login
 def car(request):
     userid = request.session.get('uid')
     print ('userid%s'%userid)
@@ -29,7 +30,7 @@ def car(request):
 
     # print(goodsinfo[0]['count'])
     # print('222222')
-    context = {'title':'购物车', 'has_car':1,'ucar_goods_list':ucar_goods_list,'count':count}
+    context = {'title':'购物车', 'has_car':1,'ucar_goods_list':ucar_goods_list,'car_count':count}
     return render(request, 'ttsx_car/cart.html',context)
 
 def modifycar_handle(request):

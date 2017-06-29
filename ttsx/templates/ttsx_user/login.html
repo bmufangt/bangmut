@@ -23,8 +23,12 @@
                         $('.user_error').html('用户名或密码错误').show();
                     }
                     else
-                        // 账号密码正确，跳转到href
-                        window.location.href = '/user/user_center_info/';
+					{
+						console.log(data.ur);
+                        window.location.href = data.url;
+					} // 账号密码正确，跳转到href
+
+
                 }
             })
 

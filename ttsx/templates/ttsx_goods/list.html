@@ -7,7 +7,7 @@
         })
         $('.operate>#add_car').click(function () {
               goodsid = $(this).attr('name');
-            $.post('/car/'+goodsid,{'goodsnum': 1,'id':goodsid})
+            $.post('/car_modify/', {'goodsnum': 1,'goodsid':goodsid})
         })
     })
 </script>
@@ -49,8 +49,7 @@
 				<h3>新品推荐</h3>
 				<ul>
                     {%for g in type%}
-                    {{g}}
-                     {%if forloop.counter <= 2 %}
+					{%if forloop.counter <= 2 %}
 					<li>
 						<a href="{{g.gid}}"><img src="/static/{{g.gimage}}"></a>
 						<h4><a href="{{g.gid}}">{{g.gtitle}}</a></h4>
