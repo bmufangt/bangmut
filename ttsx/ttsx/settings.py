@@ -24,9 +24,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '-l*78xuqr5+nqamrkq@sk^u(n)&(93o^i=w67y1mh_0js!jzfk'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -131,3 +131,7 @@ HAYSTACK_CONNECTIONS = {
 HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
 # HAYSTACK_DEFAULT_OPERATOR = 'OR'
 HAYSTACK_SEARCH_RESULTS_PER_PAGE = 12
+
+
+STATIC_ROOT='/var/www/ttsx/static/'
+# STATIC_URL='/static/'
